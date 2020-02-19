@@ -10,7 +10,6 @@ function App() {
   const [title, setTitle] = useState();
   const [url, setUrl] = useState();
   const [explanation, setExplanation] = useState();
-  // const [copyright, setCopyright] = useState();
 
   useEffect (() => {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=OYB9iH2UyhXcplnYm1eMwAi6CRMi30yyTEKOpd99`)
@@ -20,7 +19,6 @@ function App() {
         setTitle(response.data.title);
         setUrl(response.data.url);
         setExplanation(response.data.explanation);
-        // setCopyright(response.data.copyright);
       })
       .catch(err => console.log(err));
   }, []);
@@ -35,7 +33,6 @@ function App() {
         title={title}
         url={url}
         explanation={explanation}
-        // copyright={copyright}
         />
       </p>
     </div>
