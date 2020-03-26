@@ -1,0 +1,58 @@
+/* .image {
+    display: block;
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5% 5%;
+    border: 10px solid black;
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: coral;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    -webkit-box-shadow: 5px 5px 15px 5px white;
+    box-shadow: 5px 5px 15px white;
+}
+
+@media (max-width: 800px) {
+    .image {
+        width: 70%;
+    }
+}
+
+img {
+    width: 100%;
+
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-align: start;
+    line-height: 5.5rem;
+}
+@media (max-width: 800px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    margin: 5.5rem 0 1rem;
+}
+
+p{
+    text-align: start;
+    width: 100%;
+}
+
+p.exp:first-letter {
+    font-size: 3rem;
+    float: left;
+}
+
+.textBottom {
+    text-align: end;
+} */
