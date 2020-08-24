@@ -12,7 +12,7 @@ function App() {
   const [explanation, setExplanation] = useState();
 
   useEffect (() => {
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=OYB9iH2UyhXcplnYm1eMwAi6CRMi30yyTEKOpd99`)
+    axios.get(`https://cors-anywhere.herokuapp.com/https://api.nasa.gov/planetary/apod?api_key=OYB9iH2UyhXcplnYm1eMwAi6CRMi30yyTEKOpd99`)
       .then (response => {
         console.log(response.data);
         setDate(response.data.date);

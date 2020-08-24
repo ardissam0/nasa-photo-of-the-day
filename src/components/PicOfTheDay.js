@@ -2,18 +2,45 @@ import React from 'react';
 // import './PicOfTheDay.css';
 
 import styled from 'styled-components';
+import {keyframes} from 'styled-components'
+
+const floatAnimation = keyframes`
+0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+}
+50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+}
+100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+}
+`
 
 const ImgDiv = styled.div`
-display: block;
-    width: 55%;
-    height: 100%;
+    display: block;
+    width: 50%;
     margin: 0 auto;
-    padding: 5% 5%;
+    padding: 3% 3%;
+    animation-name: ${floatAnimation};
+    animation-duration: 5s;
+    animation-iteration-count: 10;
     border: 10px solid black;
 
+    @media (max-width: 950px) {
+        width: 75%;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+        animation: none;
+        font-weight: bold;
+    }
+
     font-family: 'Open Sans', sans-serif;
-    background-color: coral;
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
 
