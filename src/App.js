@@ -6,11 +6,14 @@ import PicOfTheDay from './components/PicOfTheDay';
 
 
 function App() {
+  // set useState and pull in data from API
   const [date, setDate] = useState();
   const [title, setTitle] = useState();
   const [url, setUrl] = useState();
   const [explanation, setExplanation] = useState();
 
+  // axious request to the API
+  // grab specific data
   useEffect (() => {
     axios.get(`https://cors-anywhere.herokuapp.com/https://api.nasa.gov/planetary/apod?api_key=OYB9iH2UyhXcplnYm1eMwAi6CRMi30yyTEKOpd99`)
       .then (response => {
@@ -25,6 +28,8 @@ function App() {
 
     if (!url) return <Loading />;
   return (
+
+    // Display component on page
     <div className="App">
       <p>
         {/* {<Loading />} */}
