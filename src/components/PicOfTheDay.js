@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {keyframes} from 'styled-components'
 
+// Set styles for component with styled-components
 const floatAnimation = keyframes`
 0% {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -74,7 +75,8 @@ const ImgDiv = styled.div`
     margin: 0rem 0 1rem;
     `;
 
-
+// pass props into this component
+// build component using data from state
 const PicOfTheDay = ({date, title, url, explanation}) => {
     return (
         <ImgDiv>
