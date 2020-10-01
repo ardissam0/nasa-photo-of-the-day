@@ -5,7 +5,7 @@ This is an app that displays a new photo each day using a NASA API.
 https://nasa-photo-of-the-day-three.now.sh/
 
 # Motivation
-I built this project for a project at lambda school. 
+I built this project for Lambda School. 
 
 ---
 
